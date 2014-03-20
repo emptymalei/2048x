@@ -184,9 +184,9 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "gabrielecirulli");
-  tweet.setAttribute("data-url", "http://git.io/2048");
-  tweet.setAttribute("data-counturl", "http://gabrielecirulli.github.io/2048/");
+  tweet.setAttribute("data-via", "aenonsun");
+  tweet.setAttribute("data-url", "http://aenon.github.io/life");
+  tweet.setAttribute("data-counturl", "http://aenon.github.io/life");
   tweet.textContent = "Tweet";
 
   var text = "I scored " + this.score + " points at life, a game where you " +
