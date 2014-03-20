@@ -59,13 +59,14 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[4] = "目"
   text[5] = "亚纲"
   text[6] = "纲"
-  text[7] = "门"
-  text[8] = "界"
-  text[9] = "域"
-  text[10] = "生"
-  text[11] = "42"
+  text[7] = "亚门"
+  text[8] = "门"
+  text[9] = "界"
+  text[10] = "域"
+  text[11] = "生"
   text[12] = "42"
   text[13] = "42"
+  text[14] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -159,7 +160,7 @@ HTMLActuator.prototype.message = function (won) {
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Congratulations! You have found the ultimate answer beyond 生" : "You have stumbled and fallen on your way towords the ultimate answer beyond 生";
+  var message = won ? "Congratulations! You have reached the top of biological classification system." : "You have stumbled and fallen on your way towords the top of biological classification system.";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
