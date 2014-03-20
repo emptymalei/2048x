@@ -158,7 +158,7 @@ HTMLActuator.prototype.message = function (won) {
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Congratulations! You have reached the top of biological classification." : mytxt[text3(maxscore)-2];
+  var message = won ? "Congratulations! You have found the ultimate answer beyond 生" : "You have stumbled and fallen on your way towords the ultimate answer beyond 生";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
