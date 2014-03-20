@@ -57,14 +57,15 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[2] = "属"
   text[3] = "科"
   text[4] = "目"
-  text[5] = "纲"
-  text[6] = "门"
-  text[7] = "界"
-  text[8] = "域"
-  text[9] = "生"
-  text[10] = "42"
+  text[5] = "亚纲"
+  text[6] = "纲"
+  text[7] = "门"
+  text[8] = "界"
+  text[9] = "域"
+  text[10] = "生"
   text[11] = "42"
   text[12] = "42"
+  text[13] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
