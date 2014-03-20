@@ -52,7 +52,19 @@ HTMLActuator.prototype.clearContainer = function (container) {
 };
 
 HTMLActuator.prototype.addTile = function (tile) {
-  var text = " 商周秦汉唐宋元明清　　";
+  var text = new Array();
+  text[0] = "SUBSPECIES"
+  text[1] = "SPECIES"
+  text[2] = "GENUS"
+  text[3] = "FAMILY"
+  text[4] = "ORDER"
+  text[5] = "CLASS"
+  text[6] = "PHYLUM"
+  text[7] = "KINGDOM"
+  text[8] = "DOMAIN"
+  text[9] = "LIFE"
+  text[10] = "42"
+  text[11] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -133,20 +145,20 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(9);
-  mytxt[0]="连秦始皇都见不到了T.T";
-  mytxt[1]="都是赵高害得我！";
-  mytxt[2]="曹贼你还我大汉江山！";
-  mytxt[3]="安史之乱亡我大唐……";
-  mytxt[4]="元人铁蹄果然厉害！";
-  mytxt[5]="还是朱元璋厉害……";
-  mytxt[6]="天地会的弟兄们，反清复明啊！";
-  mytxt[7]="连辛亥革命的黎明都没等到……";
-  mytxt[8]="看不到天朝的太阳了 = =";
+  mytxt[0]="";
+  mytxt[1]="！";
+  mytxt[2]="！";
+  mytxt[3]="……";
+  mytxt[4]="！";
+  mytxt[5]="……";
+  mytxt[6]="，！";
+  mytxt[7]="……";
+  mytxt[8]=" = =";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "中华人民共和国万岁！" : mytxt[text3(maxscore)-2];
+  var message = won ? "Congratulations! You have reached the top of biological classification." : mytxt[text3(maxscore)-2];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -175,8 +187,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-counturl", "http://gabrielecirulli.github.io/2048/");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at 2048, a game where you " +
-             "join numbers to score high! #2048game";
+  var text = "I scored " + this.score + " points at life, a game where you " +
+             "join ranks of biological classifications to score high! #life_class_game";
   tweet.setAttribute("data-text", text);
 
   return tweet;
