@@ -53,7 +53,6 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var text = new Array();
-  text[0] = "亚种"
   text[1] = "种"
   text[2] = "属"
   text[3] = "科"
@@ -65,6 +64,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[9] = "生"
   text[10] = "42"
   text[11] = "42"
+  text[12] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
