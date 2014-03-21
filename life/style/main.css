@@ -52,6 +52,10 @@ h1.title {
 .scores-container {
   float: right;
   text-align: right; }
+  
+#disqus_thread {
+width: 600px;
+}
 
 .score-container, .best-container {
   position: relative;
