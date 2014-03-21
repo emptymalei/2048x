@@ -55,6 +55,7 @@ h1.title {
   
 #disqus_thread {
 width: 600px;
+position: relative;
 }
 
 .score-container, .best-container {
