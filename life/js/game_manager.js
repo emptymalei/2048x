@@ -1,4 +1,4 @@
-var maxscore = 2;
+//var maxscore = 2;
 
 function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.size         = size; // Size of the grid
@@ -17,7 +17,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
 
 // Restart the game
 GameManager.prototype.restart = function () {
-  maxscore = 2;
+//  maxscore = 2;
   this.actuator.continue();
   this.setup();
 };
@@ -142,8 +142,8 @@ GameManager.prototype.move = function (direction) {
           // Update the score
           self.score += merged.value;
 
-          if (merged.value > maxscore)
-            maxscore = merged.value;
+//          if (merged.value > maxscore)
+//            maxscore = merged.value;
 
           // The mighty 2048 tile
           if (merged.value === 2048) self.won = true;
