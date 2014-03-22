@@ -160,7 +160,7 @@ HTMLActuator.prototype.message = function (won) {
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Congratulations! You have reached the top of biological classification system." : "You have stumbled and fallen on your way towords the top of biological classification system.";
+  var message = won ? "Congratulations! You have reached the top!" : "You have extincted...";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
