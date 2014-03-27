@@ -105,8 +105,9 @@ display:block;
   text-align: right; }
 
 #disqus_thread {
-width: 600px;
+/*width: 600px;*/
 margin: 0 auto;
+color:#445878;
 }
 
 .score-container, .best-container {
