@@ -1,20 +1,19 @@
-Astro2048?
+Astro 2048
 ===============
 
+A list of astro related 2048 games.
 
-Just a test. [Check out the game](http://emptymalei.github.io/2048x).
+[Click here to play games](http://emptymalei.github.io/2048x).
+
+A screen shot of the webpage:
+
+![Screenshot](images/screenshot.png)
 
 
-To do:
 
-1. Rewrite js to read hierarchy from a json file.
-2. Add selection button to select from different hierarchy files.
-3. Polish the html code which is not so pretty now.
 
 
 =========
 
 
-Check out [Aenon's Game Life Science](http://aenon.github.io/life)
-===
-A fork of the 2048 game featuring a biological classification system.
+Check out [Aenon's Game Life Science](http://aenon.github.io/life) which is a 2048 game featuring a biological classification system.
