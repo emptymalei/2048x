@@ -5,6 +5,13 @@ Astro2048?
 Just a test. [Check out the game](http://emptymalei.github.io/2048x).
 
 
+To do:
+
+1. Rewrite js to read hierarchy from a json file.
+2. Add selection button to select from different hierarchy files.
+3. Polish the html code which is not so pretty now.
+
+
 =========
 
 
