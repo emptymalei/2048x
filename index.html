@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>life</title>
+  <title>2048x</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -13,25 +14,29 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 
-  <meta property="og:title" content="life game"/>
-  <meta property="og:site_name" content="life game"/>
+  <meta property="og:title" content="astro 2048 game" />
+  <meta property="og:site_name" content="astro 2048 game" />
 </head>
+
 <body>
   <div class="container">
     <div class="heading">
       <h1 class="title">Astro2048</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
+      <h3 class="game-intro"> Arrow keys or slide with fingers <br><strong>Rank: Y,T,L,M,K,G,F,A,B,O</strong>
+      </h3>
+
+      <div class="scores-container" >
+        <div class="score-container" >0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-	<p class="game-intro">Join the tiles and get to the <strong>Astro2048！</strong></p>
+
 
     <div class="game-container">
       <div class="game-message">
         <p></p>
         <div class="lower">
-		<a class="keep-playing-button">Explore beyond ！</a>
+          <a class="keep-playing-button">Explore beyond ！</a>
           <a class="retry-button">Try again</a>
           <div class="score-sharing"></div>
         </div>
@@ -69,19 +74,52 @@
       </div>
     </div>
 
-    <p class="game-explanation">
-      <strong class="important">Chains:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same rank touch, they <strong>merge into one! </strong>The ranks used in this game are: Oh, Be A Fine Girl, Kiss Me!
+<div class="names-container">
+<div class="game-name">Stellar Classification
+</div>
+</div>
+<div class="game-explanation">
+    <p >
+      <strong class="important">Controls:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same rank touch, they <strong>merge into one! </strong>The ranks used in this game are: Y,T,L,M,K,G,F,A,B,O, which goes to higher surface temperature.
     </p>
-    <hr>
+<p>
+  <strong class="important">Astro Facts:</strong> <blockquote>Oh, Be A Fine Girl, Kiss Me! Love To You! </blockquote> is the easy way, however inversed, to remember the classification of stellar objects. Don't blame the astronomers for they always make up strange things.
+  <br>
+  More on Wikipedia: <a href="https://en.wikipedia.org/wiki/Stellar_classification" target="_blank">Stellar Classification</a>.
+</p>
+
+    <hr class="section">
     <p>
       Source Code: <a href="https://github.com/emptymalei/2048x">2048x</a>
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This is a fork from <a href="http://gabrielecirulli.github.io/2048">https://github.com/aenon/aenon.github.io</a> created by <a href="https://aenon.github.io" target="_blank">Aenon.</a>    </p>
-    <hr>
-    <p>
+      <strong class="important">Note:</strong> This is a fork from <a href="https://github.com/aenon/aenon.github.io">https://github.com/aenon/aenon.github.io</a> created by <a href="https://aenon.github.io" target="_blank">Aenon.</a>
     </p>
+
+<hr>
+<!-- Comments -->
+<div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = '2048x'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </div>
   </div>
 
   <script src="js/animframe_polyfill.js"></script>
@@ -93,23 +131,11 @@
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
 
-    <div id="disqus_thread"></div>
-     <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = '2048x'; // required: replace example with your forum shortname
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 
 
 </body>
+
 </html>

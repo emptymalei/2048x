@@ -50,20 +50,17 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var text = new Array();
-  text[1] = "Oh"
-  text[2] = "Be"
-  text[3] = "A"
-  text[4] = "Fine"
-  text[5] = "Girl"
-  text[6] = "Kiss"
-  text[7] = "Me"
-  text[8] = "Hell1"
-  text[9] = "Hell2"
-  text[10] = "Hell3"
-  text[11] = "Hell4"
-  text[12] = "Hell5"
-  text[13] = "Hell6"
-  text[14] = "42"
+  text[1] = "Y"
+  text[2] = "T"
+  text[3] = "L"
+  text[4] = "M"
+  text[5] = "K"
+  text[6] = "G"
+  text[7] = "F"
+  text[8] = "A"
+  text[9] = "B"
+  text[10] = "O"
+  text[11] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
