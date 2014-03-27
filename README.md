@@ -2,7 +2,7 @@ Astro2048?
 ===============
 
 
-Just a test.
+Just a test. [Check out the game](http://emptymalei.github.io/2048x).
 
 
 =========
