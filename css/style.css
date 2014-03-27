@@ -1,0 +1,10 @@
+.button-circle {
+width: 180px !important;
+line-height: 180px !important;
+height: 180px !important;
+}
+
+.footer a{
+  text-decoration:none;
+  color: white;
+}

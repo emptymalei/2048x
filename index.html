@@ -1,141 +1,181 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>2048x</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A list of 2048 games of astro kind">
 
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Astro 2048 &ndash; 2048 Game</title>
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 
-  <meta property="og:title" content="astro 2048 game" />
-  <meta property="og:site_name" content="astro 2048 game" />
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/main-grid.css">
+    <!--<![endif]-->
+
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
+
+
+
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+
+
+
+
+
+
 </head>
-
 <body>
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">Astro2048</h1>
-      <h3 class="game-intro"> Arrow keys or slide with fingers <br><strong>Rank: Y,T,L,M,K,G,F,A,B,O</strong>
-      </h3>
 
-      <div class="scores-container" >
-        <div class="score-container" >0</div>
-        <div class="best-container">0</div>
-      </div>
+
+
+
+
+
+
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" >Astro 2048</a>
+
+        <ul>
+            <li class="pure-menu-selected"><a href="https://github.com/emptymalei/2048x"> <i class="fa fa-github">&nbsp; Source Code</i></a></li>
+            <li class="pure-menu-selected"><a href="https://github.com/aenon/aenon.github.io" target="_blank"> <i class="fa fa-github">&nbsp; Aenon's 2048</i></a></li>
+            <li class="pure-menu-selected"><a href="http://gabrielecirulli.github.io/2048/" target="_blank"> <i class="fa fa-github">&nbsp; The First 2048</i></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Astro 2048</h1>
+        <p class="splash-subhead">
+            The 2048 Game to Learn Astro Stuff
+        </p>
+        <p>
+            <span class="pure-button pure-button-primary">Scroll Down</span>
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Astronomy and Astrophysics</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+
+                <h3 class="content-subhead">
+                    <i class="fa fa-certificate"></i>
+                    Breathtaking
+                </h3>
+                <p>
+                    It's science of celestial objects and even more. It deals with breathtaking huge and colossal objects.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-thumbs-o-up"></i>
+                    Creative
+                </h3>
+                <p>
+                    It's not stamp collecting but real science that dives deep into the universe.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-cloud"></i>
+                    Mysterious
+                </h3>
+                <p>
+                    We have not understand everything yet. Extraordinary events happen in the area of astrophysics and astronomy.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    Inspiring
+                </h3>
+                <p>
+                    Mining on other planets, precise timing, space disaster prediction and many more are these sciences capable of.
+                </p>
+            </div>
+        </div>
     </div>
 
 
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-          <a class="keep-playing-button">Explore beyond ！</a>
-          <a class="retry-button">Try again</a>
-          <div class="score-sharing"></div>
-        </div>
-      </div>
 
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
 
-      <div class="tile-container">
 
-      </div>
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-med-1-2 pure-u-lrg-2-5">
+            <i class="fa fa-gamepad fa-5x"></i>
+        </div>
+        <div class="pure-u-1 pure-u-med-1-2 pure-u-lrg-3-5" >
+
+            <h2 class="content-head content-head-ribbon">That's Enough! Let's Play Games.</h2>
+
+            <p>
+                Here is a list of 2048 games with the topic astro.
+            </p>
+
+
+        </div>
+
+
+    </div>
+<div class="pure-u-g" style="text-align:center;padding:1em 0 2em 0;">
+
+  <a href="stellarClassification/" class="button button-border-highlight button-circle">Stellar Classification</a>
+</div>
+
+
+
+    <div class="footer l-box is-center">
+        Thanks to <a href="https://github.com/aenon/" target="_blank">aenon@GitHub</a> for his/her <a href="https://github.com/aenon/aenon.github.io">生 game</a>. |  Framework and CSS used: <a href="purecss.io" target="_blank">PURECSS</a>, <a href="http://alexwolfe.github.io/Buttons/" target="_blank">Buttons</a>, <a href="fontawesome.io" target="_blank">Font Awesome</a>.
     </div>
 
-<div class="names-container">
-<div class="game-name">Stellar Classification
-</div>
-</div>
-<div class="game-explanation">
-    <p >
-      <strong class="important">Controls:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same rank touch, they <strong>merge into one! </strong>The ranks used in this game are: Y,T,L,M,K,G,F,A,B,O, which goes to higher surface temperature.
-    </p>
-<p>
-  <strong class="important">Astro Facts:</strong> <blockquote>Oh, Be A Fine Girl, Kiss Me! Love To You! </blockquote> is the easy way, however inversed, to remember the classification of stellar objects. Don't blame the astronomers for they always make up strange things.
-  <br>
-  More on Wikipedia: <a href="https://en.wikipedia.org/wiki/Stellar_classification" target="_blank">Stellar Classification</a>.
-</p>
-
-    <hr class="section">
-    <p>
-      Source Code: <a href="https://github.com/emptymalei/2048x">2048x</a>
-    </p>
-    <hr>
-    <p>
-      <strong class="important">Note:</strong> This is a fork from <a href="https://github.com/aenon/aenon.github.io">https://github.com/aenon/aenon.github.io</a> created by <a href="https://aenon.github.io" target="_blank">Aenon.</a>
-    </p>
-
-<hr>
-<!-- Comments -->
-<div>
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = '2048x'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script');
-      dsq.type = 'text/javascript';
-      dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-  </noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 
-  </div>
-  </div>
-
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_score_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
-
+<script src="http://yui.yahooapis.com/3.14.1/build/yui/yui.js"></script>
+<script>
+YUI().use('node-base', 'node-event-delegate', function (Y) {
+    // This just makes sure that the href="#" attached to the <a> elements
+    // don't scroll you back up the page.
+    Y.one('body').delegate('click', function (e) {
+        e.preventDefault();
+    }, 'a[href="#"]');
+});
+</script>
 
 
 
 
 
 </body>
-
 </html>
