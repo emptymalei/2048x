@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CosmoScale@Astro2048Game</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <meta property="og:title" content="CosmoScale@Astro2048Game" />
+  <meta property="og:site_name" content="CosmoScale@Astro2048Game" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Astro2048</h1>
+      <h3 class="game-intro"> Arrow keys or slide with fingers <br><strong>Rank: Asteroid, Planet, Star, Galactic Group(GalacticGroup), Supercluster, Larege Scale Structure(LargeScale), Observable Univserse(Universe), Multiverse</strong>
+      </h3>
+
+      <div class="scores-container" >
+        <div class="score-container" >0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="keep-playing-button">Explore beyond ！</a>
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+<div class="names-container">
+<div class="game-name">Stellar Classification
+</div>
+</div>
+<div class="game-explanation">
+    <p >
+      <strong class="important">Controls:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same rank touch, they <strong>merge into one! </strong>The ranks used in this game are: Asteroid, Planet, Star, Galactic Group(GalacticGroup), Supercluster, Larege Scale Structure(LargeScale), Observable Univserse(Universe), Multiverse. This idea was proposed by MQQ: <a href="http://www.guokr.com/i/1818173249/" target="_blank">MQQ@Guokr</a>, <a href="https://github.com/MQQ" target="_blank">MQQ@GitHub<i class="fa fa-github"></i></a>.
+    </p>
+<p>
+  <strong class="important">Astro Facts:</strong> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Earth%27s_Location_in_the_Universe_SMALLER_%28JPEG%29.jpg/1024px-Earth%27s_Location_in_the_Universe_SMALLER_%28JPEG%29.jpg" width="100%;">
+  <br>
+  More on Wikipedia: <a href="https://en.wikipedia.org/wiki/Observable_universe#Horizons" target="_blank">Observable Universe</a>.
+</p>
+
+    <hr class="section">
+    <p>
+      Source Code: <a href="https://github.com/emptymalei/2048x">2048x</a>
+    </p>
+    <hr>
+    <p>
+      <strong class="important">Note:</strong> This is a fork from <a href="https://github.com/aenon/aenon.github.io">https://github.com/aenon/aenon.github.io</a> created by <a href="https://aenon.github.io" target="_blank">Aenon.</a>
+    </p>
+
+<hr>
+<!-- Comments -->
+<div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = '2048x'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+  </div>
+  </div>
+
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_score_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
