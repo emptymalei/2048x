@@ -56,6 +56,14 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[4] = "Supernova"
   text[5] = "NeutronStar"
   text[6] = "42"
+  text[7] = "42"
+  text[8] = "42"
+  text[9] = "42"
+  text[10] = "42"
+  text[11] = "42"
+  text[12] = "42"
+  text[13] = "42"
+  text[14] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -67,7 +75,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 2048) classes.push("tile-super");
+  if (tile.value > 64) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
