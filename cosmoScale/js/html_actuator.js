@@ -53,12 +53,15 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[1] = "Asteroid"
   text[2] = "Planet"
   text[3] = "Star"
-  text[4] = "Galactic Group"
-  text[5] = "Supercluster"
-  text[6] = "Large Scale"
-  text[7] = "Universe"
-  text[8] = "Multiverse"
-  text[9] = "42"
+  text[4] = "Star Cluster"
+  text[5] = "Galaxy"
+  text[6] = "Galaxy Group"
+  text[7] = "Galaxy Cluster"
+  text[8] = "Supercluster"
+  text[9] = "Large Scale Structure"
+  text[10] = "Observable Universe"
+  text[11] = "Multiverse"
+  text[12] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
