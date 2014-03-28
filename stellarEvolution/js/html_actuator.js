@@ -56,14 +56,6 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[4] = "Supernova"
   text[5] = "NeutronStar"
   text[6] = "42"
-  text[7] = "42"
-  text[8] = "42"
-  text[9] = "42"
-  text[10] = "42"
-  text[11] = "42"
-  text[12] = "42"
-  text[13] = "42"
-  text[14] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -164,13 +156,13 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "aenonsun");
-  tweet.setAttribute("data-url", "http://aenon.github.io/life");
-  tweet.setAttribute("data-counturl", "http://aenon.github.io/life");
+  tweet.setAttribute("data-via", "emptymalei");
+  tweet.setAttribute("data-url", "http://emptymalei.github.io/2048x");
+  tweet.setAttribute("data-counturl", "http://emptymalei.github.io/2048x");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at life, a game where you " +
-             "join ranks of biological classifications to score high! #life_class_game";
+  var text = "I scored " + this.score + " points at StellarClassification of Astro 2048 game, a game where you " +
+             "join ranks of Astro stuff to score high! #Astro2048";
   tweet.setAttribute("data-text", text);
 
   return tweet;

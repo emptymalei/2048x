@@ -50,12 +50,18 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var text = new Array();
-  text[1] = "Cloud"
-  text[2] = "Star"
-  text[3] = "Giant"
-  text[4] = "Nebula"
-  text[5] = "Dwarf"
-  text[11] = "42"
+  text[1] = "分子云"
+  text[2] = "主序前"
+  text[3] = "零龄主序"
+  text[4] = "主序"
+  text[5] = "红巨星"
+  text[6] = "氦闪耀"
+  text[7] = "水平分支"
+  text[8] = "渐进巨星分支"
+  text[9] = "行星状星云"
+  text[10] = "白矮星"
+  text[11] = "Ia型超新星"
+  text[12] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -157,12 +163,12 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "aenonsun");
-  tweet.setAttribute("data-url", "http://aenon.github.io/life");
-  tweet.setAttribute("data-counturl", "http://aenon.github.io/life");
+  tweet.setAttribute("data-url", "http://emptymalei.github.io/2048x");
+  tweet.setAttribute("data-counturl", "http://emptymalei.github.io/2048x");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at life, a game where you " +
-             "join ranks of biological classifications to score high! #life_class_game";
+  var text = "我在天文版本之恒星演化 2048 游戏中得了 " + this.score + " 分！这是一个利用 2048 游戏学习天文的地方。 " +
+             "看看这是什么游戏:http://emptymalei.github.io/2048x #Astro2048";
   tweet.setAttribute("data-text", text);
 
   return tweet;

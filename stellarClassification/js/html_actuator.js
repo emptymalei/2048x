@@ -72,7 +72,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 2048) classes.push("tile-super");
+  if (tile.value > 1024) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
@@ -161,13 +161,12 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "aenonsun");
-  tweet.setAttribute("data-url", "http://aenon.github.io/life");
-  tweet.setAttribute("data-counturl", "http://aenon.github.io/life");
+  tweet.setAttribute("data-via", "emptymalei");
+  tweet.setAttribute("data-url", "http://emptymalei.github.io/2048x");
+  tweet.setAttribute("data-counturl", "http://emptymalei.github.io/2048x");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at life, a game where you " +
-             "join ranks of biological classifications to score high! #life_class_game";
+  var text = "I scored " + this.score + " points at StellarClassification of Astro 2048 game, a game where you " + "join ranks of Astro stuff to score high! #Astro2048";
   tweet.setAttribute("data-text", text);
 
   return tweet;
