@@ -55,7 +55,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[3] = "Supergiant"
   text[4] = "Supernova"
   text[5] = "NeutronStar"
-  text[11] = "42"
+  text[6] = "42"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
