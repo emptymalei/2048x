@@ -233,11 +233,11 @@ hr {
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
     .game-container .game-message p {
-      /*font-size: 40px;*/
+      font-size: 40px;
       font-weight: bold;
-      height: 40px;
-      line-height: 40px;
-      margin-top: 222px; }
+      height: 60px;
+      line-height: 60px;
+      margin-top: 200px; }
     .game-container .game-message .lower {
       display: block;
       margin-top: 59px; }
@@ -604,11 +604,11 @@ border-top:1px solid black; }
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
       .game-container .game-message p {
-        font-size: 60px;
+        font-size: 20px;
         font-weight: bold;
-        height: 60px;
-        line-height: 60px;
-        margin-top: 222px; }
+        height: 30px;
+        line-height: 30px;
+        margin-top: 70px; }
       .game-container .game-message .lower {
         display: block;
         margin-top: 59px; }
@@ -738,13 +738,7 @@ border-top:1px solid black; }
   .tile .tile-inner {
     font-size: 23px; }
 
-  .game-message p {
-    font-size: 30px !important;
-    height: 30px !important;
-    line-height: 30px !important;
-    margin-top: 90px !important; }
-  .game-message .lower {
-    margin-top: 30px !important; }
+
 
   .sharing > iframe, .sharing > span, .sharing > form {
     display: block;

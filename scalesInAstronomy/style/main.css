@@ -394,7 +394,7 @@ line-height:50px;}
     color: #f9f6f2;
     background: #f67c5f;
 
-	/*font-size: 27px;*/ /*Adapt this for more confortable size*/}
+  /*font-size: 27px;*/ /*Adapt this for more confortable size*/}
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
     background: #f65e3b;
@@ -406,7 +406,7 @@ line-height:50px; }
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 20px;
   line-height:50px;
-	/*font-size: 27px;*/ }
+  /*font-size: 27px;*/ }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
     background: #edcc61;
@@ -614,11 +614,11 @@ border-top:1px solid black; }
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
       .game-container .game-message p {
-        font-size: 60px;
+        font-size: 20px;
         font-weight: bold;
-        height: 60px;
-        line-height: 60px;
-        margin-top: 222px; }
+        height: 30px;
+        line-height: 30px;
+        margin-top: 70px; }
       .game-container .game-message .lower {
         display: block;
         margin-top: 59px; }
@@ -770,13 +770,6 @@ border-top:1px solid black; }
   line-height:30px;}
 /*Adjust 520px screen END*/
 
-  .game-message p {
-    font-size: 30px !important;
-    height: 30px !important;
-    line-height: 30px !important;
-    margin-top: 90px !important; }
-  .game-message .lower {
-    margin-top: 30px !important; }
 
   .sharing > iframe, .sharing > span, .sharing > form {
     display: block;
